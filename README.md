@@ -16,8 +16,8 @@ Gives you access to a virtualised ARM based Raspberry Pi machine running the Ras
 
 This is not just a Raspian Docker image, it's a full ARM based Raspberry Pi virtual machine environment.
 
-<div align="center">
-	<img src="media/demo.svg" width="720">
+<div style="text-align:center">
+	<img alt="demo" src="media/demo.svg" width="720" />
 </div>
 
 ## Usage
@@ -93,7 +93,7 @@ Swap:           99Mi          0B        99Mi
 
 ## Build
 
-Build this image yourself by checking out this repo, `cd` ing into it and running:
+Build this image yourself by checking out this repo, `cd` into it and running:
 
 ```
 docker build -t lukechilds/dockerpi .
