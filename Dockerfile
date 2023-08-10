@@ -18,8 +18,8 @@ RUN gpg --keyserver keyserver.ubuntu.com --recv-keys CEACC9E15534EBABB82D3FA0335
 RUN gpg --verify "${QEMU_TARBALL}.sig" "${QEMU_TARBALL}"
 
 RUN # Extract source tarball
-RUN apt-get -y install pkg-config
-RUN tar xvf "${QEMU_TARBALL}"
+RUN apt-get -y install pkg-config xz-utils
+RUN tar -xJf "${QEMU_TARBALL}"
 
 RUN # Build source
 # These seem to be the only deps actually required for a successful  build
