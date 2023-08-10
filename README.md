@@ -70,27 +70,25 @@ You'll see the entire boot process logged to your TTY until you're prompted to l
 
 ```
 pi@raspberrypi:~$ uname -a
-Linux raspberrypi 4.19.50+ #1 Tue Nov 26 01:49:16 CET 2019 armv6l GNU/Linux
+Linux raspberrypi 5.10.92-v8+ #1514 SMP PREEMPT Mon Jan 17 17:39:38 GMT 2022 aarch64 GNU/Linux
 pi@raspberrypi:~$ cat /etc/os-release | head -n 1
-PRETTY_NAME="Raspbian GNU/Linux 10 (buster)"
+PRETTY_NAME="Raspbian GNU/Linux 11 (bullseye)"
 pi@raspberrypi:~$ cat /proc/cpuinfo
 processor       : 0
-model name      : ARMv6-compatible processor rev 7 (v6l)
-BogoMIPS        : 798.31
-Features        : half thumb fastmult vfp edsp java tls
+BogoMIPS        : 125.00
+Features        : fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
 CPU implementer : 0x41
-CPU architecture: 7
+CPU architecture: 8
 CPU variant     : 0x0
-CPU part        : 0xb76
-CPU revision    : 7
+CPU part        : 0xd03
+CPU revision    : 4
 
-Hardware        : ARM-Versatile (Device Tree Support)
-Revision        : 0000
-Serial          : 0000000000000000
+Hardware        : BCM2835
+Model           : Raspberry Pi 3 Model B+
 pi@raspberrypi:~$ free -h
-              total        used        free      shared  buff/cache   available
-Mem:          246Mi        20Mi       181Mi       1.0Mi        44Mi       179Mi
-Swap:          99Mi          0B        99Mi
+               total        used        free      shared  buff/cache   available
+Mem:           921Mi        42Mi       681Mi       0.0Ki       197Mi       822Mi
+Swap:           99Mi          0B        99Mi
 ```
 
 ## Build
